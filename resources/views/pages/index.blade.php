@@ -709,7 +709,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>khubaibw24@gmail.com</p>
+              <p>khubaib@zymok.com</p>
             </div>
           </div>
 
