@@ -2,6 +2,9 @@
 @section('content')
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
+    <div id="canvasid" style="position: absolute; top:0; z-index:-99">
+      <canvas width="1280" height="510"></canvas>
+  </div>
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Welcome to <span>Zymok</span></h1>
       <h2>We are team of your dream builders</h2>
@@ -70,8 +73,9 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>
+              We are working on multiple
+          </p>
         </div>
 
         <div class="row">
@@ -720,7 +724,6 @@
               <p>+92 304 4614400</p>
             </div>
           </div>
-
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
