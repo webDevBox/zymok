@@ -30,9 +30,11 @@
                   </thead>
                   <tbody>
                       @foreach ($views as $view)
-                          <td>{{ $view->date_time }}</td>
-                          <td>{{ $view->country }}</td>
-                          <td>{{ $view->city }}</td>
+                      <tr>
+                        <td>{{ $view->date_time }}</td>
+                        <td>{{ $view->country }}</td>
+                        <td>{{ $view->city }}</td>
+                      </tr> 
                       @endforeach
                   </tbody>
                 </table>
