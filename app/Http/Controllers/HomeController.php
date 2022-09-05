@@ -7,7 +7,8 @@ use App\Models\View;
 
 class HomeController extends Controller
 {
-    public function index()
+
+    public static function getIp()
     {
         if(isset($_SERVER['HTTP_CLIENT_IP']))
         {
@@ -21,8 +22,11 @@ class HomeController extends Controller
         {
             return (isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '');
         }
+    }
 
-        $ip=get_ip();
+    public function index()
+    {
+        $ip = self::getIp();
         $query=@unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
 
         $country = null;
