@@ -41,11 +41,14 @@ class HomeController extends Controller
         date_default_timezone_set("Asia/Karachi");
         $date = date("Y-m-d h:i a");
         
-        View::create([
-            'date_time' => $date,
-            'country' => $country,
-            'city' => $city
-        ]);
+        if($city != 'Shekhupura')
+        {
+            View::create([
+                'date_time' => $date,
+                'country' => $country,
+                'city' => $city
+            ]);
+        }
 
         return view('pages.index');
     }
