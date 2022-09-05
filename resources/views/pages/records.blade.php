@@ -22,7 +22,12 @@
                 <h2>Total: <span>{{ count($views) }}</span></h2>
                 <ul>
                     @foreach ($views as $view)
-                        <li>{{ $view->date_time }}</li>
+                    <ul>
+                      <li>{{ $view->date_time }}</li>
+                      <li>{{ $view->country }}</li>
+                      <li>{{ $view->city }}</li>
+                    </ul>
+                        
                     @endforeach
                 </ul>
             </div>
