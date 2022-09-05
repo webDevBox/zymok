@@ -2,7 +2,7 @@
 @section('content')
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex atdgn-items-center">
     <div id="canvasid" style="position: absolute; top:0; z-index:-99">
       <canvas width="1280" height="510"></canvas>
   </div>
@@ -20,17 +20,22 @@
         <section id="featured-services" class="featured-services">
             <div class="container" data-aos="fade-up">
                 <h2>Total: <span>{{ count($views) }}</span></h2>
-                <ul>
-                    @foreach ($views as $view)
-                    <li>
-                      <ul>
-                        <li>{{ $view->date_time }}</li>
-                        <li>{{ $view->country }}</li>
-                        <li>{{ $view->city }}</li>
-                      </ul>
-                    </li>
-                    @endforeach
-                </ul>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Country</th>
+                      <th>City</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      @foreach ($views as $view)
+                          <td>{{ $view->date_time }}</td>
+                          <td>{{ $view->country }}</td>
+                          <td>{{ $view->city }}</td>
+                      @endforeach
+                  </tbody>
+                </table>
             </div>
           </section><!-- End Featured Services Section -->
 
