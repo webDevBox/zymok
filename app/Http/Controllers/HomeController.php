@@ -36,7 +36,6 @@ class HomeController extends Controller
             $country = $query['country'];
             $city = $query['city'];
          }
-            dd($country.' '.$city);
 
         date_default_timezone_set("Asia/Karachi");
         $date = date("Y-m-d h:i a");
