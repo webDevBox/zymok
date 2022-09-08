@@ -4,7 +4,7 @@
   <section id="hero" class="d-flex align-items-center">
     <div id="canvasid" style="position: absolute; top:0; z-index:-99">
       <canvas width="1280" height="510"></canvas>
-  </div>
+    </div>
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Welcome to <span>Zymok</span></h1>
       <h2>We are team of your dream builders</h2>
@@ -18,9 +18,11 @@
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
+    <section id="featured-services" style="margin-top:100px;" class="featured-services">
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center">How we work</h2>
+        <div class="section-title-top">
+          <h2>How we work</h2>
+        </div>
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
