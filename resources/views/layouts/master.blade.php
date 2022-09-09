@@ -55,13 +55,23 @@
       .body{
         overflow-x: hidden;
       }
+      .alert-box {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                }
     </style>
 
 
 </head>
 
 <body class="body">
-
+  @if(Session::has('success'))
+  <p class="alert-box alert alert-success">{{ Session::get('success') }}</p>
+@endif
+@if(Session::has('error'))
+  <p class="alert-box alert alert-danger">{{ Session::get('error') }}</p>
+@endif
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">

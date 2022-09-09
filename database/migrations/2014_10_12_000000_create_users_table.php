@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
+            $table->tinyInteger('role')->comment('0=user, 1=admin');
             $table->string('password')->nullable();
             $table->timestamps();
         });

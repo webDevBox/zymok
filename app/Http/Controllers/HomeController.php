@@ -52,10 +52,4 @@ class HomeController extends Controller
         return view('pages.index');
     }
 
-    public function getRecords()
-    {
-        $views = View::get();
-
-        return view('pages.records',compact('views'));
-    }
 }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +18,14 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 
-Route::get('/records',[HomeController::class, 'getRecords']);
+Route::group(['middleware' => 'auth.guest'],function () {
+Route::get('/admin',[AuthController::class, 'index']);
+Route::post('/login',[AuthController::class, 'login'])->name('login');
+});
+
+
+Route::group(['middleware' => 'auth.admin'],function () {
+    Route::get('/logout',[AuthController::class, 'logout']);
+    Route::get('/dashboard',[AdminController::class, 'index']);
+    
+});
