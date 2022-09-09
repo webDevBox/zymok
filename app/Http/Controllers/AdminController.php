@@ -14,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $views = View::get();
+        $views = View::latest()->get();
 
         return view('pages.records',compact('views'));
     }
