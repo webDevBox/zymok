@@ -30,19 +30,30 @@ class HomeController extends Controller
     {
         $ip = self::getIp();
         $query=@unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
-dd($query);
+
         $country = null;
         $city = null;
+        $ip = 'null';
 
         if($query && $query['status'] == 'success'){
             $country = $query['country'];
             $city = $query['city'];
+            $ip = $query['query'];
          }
 
         date_default_timezone_set("Asia/Karachi");
         $date = date("Y-m-d h:i a");
-        
-        if($city != 'Shekhupura')
+
+        $gohead = true;
+        $checkIps = View::whereIp($ip)->get();
+
+        foreach($checkIps as $checkIp)
+        {
+            if($checkIp->ip == $ip && $date == $checkIp->date_time)
+                $gohead = false;
+        }
+
+        if($gohead)
         {
             View::create([
                 'date_time' => $date,

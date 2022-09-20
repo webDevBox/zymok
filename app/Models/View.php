@@ -12,6 +12,7 @@ class View extends Model
     protected $fillable = [
         'date_time',
         'country',
-        'city'
+        'city',
+        'ip'
     ];
 }
