@@ -21,11 +21,14 @@ Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => 'auth.guest'],function () {
 Route::get('/admin',[AuthController::class, 'index']);
 Route::post('/login',[AuthController::class, 'login'])->name('login');
+Route::post('/contact',[HomeController::class, 'contact'])->name('contact');
+
 });
 
 
 Route::group(['middleware' => 'auth.admin'],function () {
     Route::get('/logout',[AuthController::class, 'logout']);
     Route::get('/dashboard',[AdminController::class, 'index']);
+    Route::get('/contacts',[AdminController::class, 'contact'])->name('contactList');
     
 });

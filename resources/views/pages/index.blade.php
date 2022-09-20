@@ -601,7 +601,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="{{ route('contact') }}" method="post" role="form" class="php-email-form">
+              @csrf
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -611,10 +612,10 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Phone (Optional)">
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>

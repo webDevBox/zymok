@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\View;
+use App\Models\contact;
 
 class AdminController extends Controller
 {
@@ -17,6 +18,13 @@ class AdminController extends Controller
         $views = View::latest()->get();
 
         return view('pages.records',compact('views'));
+    }
+    
+    public function contact()
+    {
+        $contacts = contact::latest()->get();
+
+        return view('pages.contacts',compact('contacts'));
     }
 
     /**

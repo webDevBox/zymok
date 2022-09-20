@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-  <h1 class="text-center text-dark">Records</h1>
+  <h1 class="text-center text-dark">Views</h1>
   <div class="container" data-aos="fade-up">
       <h2>Total: <span>{{ count($views) }}</span></h2>
       <table class="table">

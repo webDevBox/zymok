@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\View;
+use App\Models\contact;
+use App\Http\Requests\ContactRequest;
 
 class HomeController extends Controller
 {
@@ -50,6 +52,39 @@ class HomeController extends Controller
         }
 
         return view('pages.index');
+    }
+
+    public function contact(ContactRequest $request)
+    {
+        $ip = self::getIp();
+        $query=@unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
+
+        $country = null;
+        $city = null;
+
+        if($query && $query['status'] == 'success'){
+            $country = $query['country'];
+            $city = $query['city'];
+         }
+
+         date_default_timezone_set("Asia/Karachi");
+        $date = date("Y-m-d h:i a");
+
+         contact::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'country' => $country,
+            'city' => $city,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'date_time' => $date
+         ]);
+
+         return response()->json([
+            'status' => 'success',
+            'message' => 'Data Sent! Thanks'
+         ]);
+
     }
 
 }
