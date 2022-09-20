@@ -30,7 +30,7 @@ class HomeController extends Controller
     {
         $ip = self::getIp();
         $query=@unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
-
+dd($query);
         $country = null;
         $city = null;
 
