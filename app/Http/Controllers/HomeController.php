@@ -29,10 +29,27 @@ class HomeController extends Controller
 
     public function link()
     {
+        $ip = self::getIp();
+        $query=@unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
+
+        $country = null;
+        $city = null;
+        $ip = 'null';
+
+        if($query && $query['status'] == 'success'){
+            $country = $query['country'];
+            $city = $query['city'];
+            $ip = $query['query'];
+         }
+
         date_default_timezone_set("Asia/Karachi");
         $date = date("Y-m-d h:i a");
 
-        Link::create(['date_time' => $date]);
+        Link::create([
+            'country' => $country,
+            'city' => $city,
+            'date_time' => $date
+        ]);
 
         return view('pages.link');
     }

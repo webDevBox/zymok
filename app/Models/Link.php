@@ -10,6 +10,8 @@ class Link extends Model
     use HasFactory;
 
     protected $fillable = [
-        'date_time'
+        'date_time',
+        'country',
+        'city'
     ];
 }

@@ -6,12 +6,16 @@
       <table class="table">
         <thead>
           <tr>
+            <th>Country</th>
+            <th>City</th>
             <th>Date & Time</th>
           </tr>
         </thead>
         <tbody>
             @foreach ($links as $link)
             <tr>
+              <td>{{ $link->country }}</td>
+              <td>{{ $link->city }}</td>
               <td>{{ $link->date_time }}</td>
               
             </tr> 

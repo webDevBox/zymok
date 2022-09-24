@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('links', function (Blueprint $table) {
             $table->id();
+            $table->string('country')->nullable();
+            $table->string('city')->nullable();
             $table->string('date_time')->nullable();
             $table->timestamps();
         });
