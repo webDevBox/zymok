@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\View;
 use App\Models\contact;
+use App\Models\Link;
 use App\Http\Requests\ContactRequest;
 
 class HomeController extends Controller
@@ -24,6 +25,16 @@ class HomeController extends Controller
         {
             return (isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '');
         }
+    }
+
+    public function link()
+    {
+        date_default_timezone_set("Asia/Karachi");
+        $date = date("Y-m-d h:i a");
+
+        Link::create(['date_time' => $date]);
+
+        return view('pages.link');
     }
 
     public function index()

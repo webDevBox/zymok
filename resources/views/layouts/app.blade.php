@@ -57,6 +57,9 @@
                 <li class="nav-item active">
                 <a class="nav-link" href="/contacts">Contacts </a>
                 </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="/getLink">Links </a>
+                </li>
                 
             </ul>
             <a class="btn btn-danger ml-auto" href="/logout">Logout</a>

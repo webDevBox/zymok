@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\View;
 use App\Models\contact;
+use App\Models\Link;
 
 class AdminController extends Controller
 {
@@ -17,14 +18,21 @@ class AdminController extends Controller
     {
         $views = View::latest()->get();
 
-        return view('pages.records',compact('views'));
+        return view('pages.admin.records',compact('views'));
     }
     
     public function contact()
     {
         $contacts = contact::latest()->get();
 
-        return view('pages.contacts',compact('contacts'));
+        return view('pages.admin.contacts',compact('contacts'));
+    }
+    
+    public function getLink()
+    {
+        $links = Link::latest()->get();
+
+        return view('pages.admin.links',compact('links'));
     }
 
     /**

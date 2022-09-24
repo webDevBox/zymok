@@ -23,6 +23,8 @@ Route::get('/admin',[AuthController::class, 'index']);
 Route::post('/login',[AuthController::class, 'login'])->name('login');
 Route::post('/contact',[HomeController::class, 'contact'])->name('contact');
 
+Route::get('/link', [HomeController::class, 'link'])->name('link');
+
 });
 
 
@@ -30,5 +32,6 @@ Route::group(['middleware' => 'auth.admin'],function () {
     Route::get('/logout',[AuthController::class, 'logout']);
     Route::get('/dashboard',[AdminController::class, 'index']);
     Route::get('/contacts',[AdminController::class, 'contact'])->name('contactList');
+    Route::get('/getLink',[AdminController::class, 'getLink'])->name('getLink');
     
 });
