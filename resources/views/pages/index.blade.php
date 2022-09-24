@@ -261,7 +261,7 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <h3>Our Leadership <span>Team</span></h3>
+          <h3>Leadership</h3>
         </div>
 
         <div class="row">
@@ -333,7 +333,7 @@
               </div>
               <div class="member-info">
                 <h4>Ayesha Tayyab</h4>
-                <span>BDO</span>
+                <span>BDM</span>
               </div>
             </div>
           </div>
@@ -342,6 +342,77 @@
 
       </div>
     </section><!-- End Team Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="section-title">
+      <h3>Team</h3>
+    </div>
+    <section id="testimonials" class="testimonials">
+      
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Maroof</h3>
+                <h4>Lead Graphic Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Maroof is professional
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Ahmad </h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  He is designer
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpeg" class="testimonial-img" alt="">
+                <h3>Osama Waris</h3>
+                <h4>Full Stack Developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Osama is pillar of zymok
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpeg" class="testimonial-img" alt="">
+                <h3>Talkan</h3>
+                <h4>Web Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Web designer
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
