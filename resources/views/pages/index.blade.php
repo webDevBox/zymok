@@ -271,10 +271,7 @@
               <div class="member-img">
                 <img src="assets/img/team/ceo.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/khubaib-waheed-5b0731195/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -289,10 +286,7 @@
               <div class="member-img">
                 <img src="assets/img/team/cfo.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -307,10 +301,7 @@
               <div class="member-img">
                 <img src="assets/img/team/pm.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/muhammad-umar-b8672b14a/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -323,16 +314,13 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/bdo.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/bdo.jpeg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/roomyjanjua/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Ayesha Tayyab</h4>
+                <h4>Mr Ahsaan</h4>
                 <span>BDM</span>
               </div>
             </div>
@@ -361,7 +349,7 @@
                 <h4>Lead Graphic Designer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Maroof is professional
+                  Professional
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -374,7 +362,7 @@
                 <h4>Designer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  He is designer
+                  Creative
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -387,7 +375,7 @@
                 <h4>Full Stack Developer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Osama is pillar of zymok
+                  Zymok's Pillar
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -400,7 +388,7 @@
                 <h4>Web Designer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Web designer
+                  Hard Working
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
