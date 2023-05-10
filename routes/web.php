@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,8 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/',[PortfolioController::class, 'index']);
+Route::get('/web',[HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => 'auth.guest'],function () {
 Route::get('/admin',[AuthController::class, 'index']);
